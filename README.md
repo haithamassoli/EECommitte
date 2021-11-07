@@ -1,2 +1,2 @@
 # EECommittee
-https://haithamassoli.github.io/EECommittee/
+https://haithamassoli.github.io/EECommitte/
