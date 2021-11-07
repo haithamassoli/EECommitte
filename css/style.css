@@ -10,10 +10,9 @@ a{
 }
 body{
   background: #f2f2f2;
-  min-height: 100vh;
 }
 nav{
-  background: rgb(247, 247, 49);
+  background: #171c24;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -22,7 +21,7 @@ nav{
   padding: 0 100px;
 }
 nav .logo{
-  color: #333;
+  color: #fff;
   font-size: 30px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -83,7 +82,7 @@ nav .search-icon{
   text-align: center;
   margin: 0 50px;
   font-size: 18px;
-  color: #333;
+  color: #fff;
   cursor: pointer;
   display: none;
 }
