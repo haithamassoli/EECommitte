@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/style.css">
-  <title>EECommitte</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>EECommitte</title>
+  </head>
+  <body>
     <nav>
-      <div class="menu-icon">
-         <span class="fas fa-bars"></span>
-      </div>
-      <div class="logo">
-        EECommitte
-      </div>
-      <div class="nav-items">
-         <li><a href="#">Home</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Blogs</a></li>
-         <li><a href="#">Contact</a></li>
-         <li><a href="#">Feedback</a></li>
-      </div>
       <div class="search-icon">
-         <span class="fas fa-search"></span>
+        <span class="fas fa-search"></span>
       </div>
       <div class="cancel-icon">
-         <span class="fas fa-times"></span>
+        <span class="fas fa-times"></span>
       </div>
       <form action="#">
-         <input type="search" class="search-data" placeholder="Search" required>
-         <button type="submit" class="fas fa-search"></button>
+        <div class="search-container">
+          <button type="submit" class="fas fa-search"></button>
+          <input
+            type="search"
+            class="search-data"
+            placeholder="ابحث"
+            required
+          />
+        </div>
+        <div class="results-box">
+          <div></div>
+        </div>
       </form>
-   </nav>
-   <div class="content">
-      <header class="space">EECommitte</header>
-      <div class="space text">
-         By Anas Saeed
+      <div class="nav-items">
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Home</a></li>
       </div>
-   </div>
-   <div class="menu-btn">
-    <div class="menu-btn__burger"></div>
-  </div>
-   
-   </script>
-  <script src="./js/script.js"></script>
-</body>
+      <div class="logo">EECommitte</div>
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+      </div>
+    </nav>
+    <div class="content">
+      <header class="space">EECommitte</header>
+      <div class="space text">By Anas Saeed</div>
+    </div>
+    <script src="./Subjects.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
