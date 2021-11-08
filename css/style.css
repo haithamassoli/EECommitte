@@ -7,7 +7,7 @@
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: #333;
 }
 body {
   background: #f2f2f2;
@@ -19,7 +19,6 @@ body {
   overflow-x: hidden;
 }
 nav {
-  background: #171c24;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -65,7 +64,7 @@ nav form {
   flex-direction: column;
   height: 40px;
   padding: 2px;
-  background: #1e232b;
+  /* background: #fff; */
   min-width: 18% !important;
   border-radius: 5px;
   border: 1px solid rgba(155, 155, 155, 0.2);
@@ -92,13 +91,13 @@ nav form .search-data:focus {
 nav form .results-box {
   z-index: 10;
   width: 100%;
-  color: #fff;
+  color: #333;
   border-top: #eee;
   padding: 10px 8px;
   height: 280px;
   margin: 20px 0 0 2px;
   border-radius: 6px;
-  background-color: #333;
+  background-color: #fff;
   display: none;
 }
 nav form .results-box.active {
@@ -107,12 +106,9 @@ nav form .results-box.active {
 nav form .results-box div {
   width: 100%;
   max-height: 240px;
-  overflow-y: scroll;
+  overflow-y: hidden;
   opacity: 0;
   pointer-events: none;
-  display: none;
-}
-nav form .results-box div::-webkit-scrollbar {
   display: none;
 }
 nav form .results-box div.active {
@@ -140,7 +136,7 @@ nav form button {
   padding: 0 15px;
   color: #fff;
   font-size: 17px;
-  background: #ff3d00;
+  background: transparent;
   border: none;
   border-radius: 6px;
   height: 34px;
@@ -159,6 +155,7 @@ nav .search-icon {
   color: #fff;
   cursor: pointer;
   display: none;
+  z-index: 10000;
 }
 nav .menu-icon span,
 nav .cancel-icon,
@@ -187,7 +184,7 @@ nav .search-icon {
   nav .nav-items {
     position: fixed;
     z-index: 99;
-    top: 70px;
+    top: 0px;
     width: 100%;
     left: -100%;
     height: 100%;
@@ -237,7 +234,7 @@ nav .search-icon {
     height: 0;
     z-index: -1;
     border: 10px solid transparent;
-    border-bottom-color: #1e232b;
+    border-bottom-color: #fff;
     margin: -20px 0 0;
   }
   nav form:after {
@@ -245,7 +242,7 @@ nav .search-icon {
     content: "";
     height: 40px;
     padding: 2px;
-    background: #1e232b;
+    background: #fff;
     border-radius: 6px;
     min-width: calc(100%);
     z-index: -2;
@@ -259,6 +256,10 @@ nav .search-icon {
   nav .search-icon,
   nav .menu-icon span {
     display: block;
+  }
+  .fa-solid,
+  .fas {
+    color: #fff;
   }
   nav .menu-icon span.hide,
   nav .search-icon.hide {
