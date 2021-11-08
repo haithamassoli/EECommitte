@@ -301,16 +301,18 @@ nav .logo.space {
     left: 30px;
   }
 }
+@media (max-width: 450px) {
+  .content .space {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+}
 @media (max-width: 350px) {
   nav .menu-icon,
   nav .cancel-icon,
   nav .search-icon {
     margin: 0 10px;
     font-size: 16px;
-  }
-  .content .space {
-    margin: 10px 0;
-    font-size: 20px;
   }
 }
 .content {
