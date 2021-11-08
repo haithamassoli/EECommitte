@@ -94,7 +94,7 @@ nav form .search-data:focus {
 nav form .results-box {
   z-index: 10;
   width: 100%;
-  color: #333;
+  color: #fff;
   border-top: #eee;
   padding: 10px 8px;
   height: 280px;
@@ -212,7 +212,8 @@ nav .search-icon {
     margin-right: 0px;
   }
   nav form .search-data {
-    color: #333;
+    color: #fff;
+    background-color: transparent;
   }
   nav form {
     position: absolute;
@@ -229,7 +230,7 @@ nav .search-icon {
   }
   nav form .results-box {
     padding: 10px 8px;
-    margin: 8px 0 0 2px;
+    margin: 10px 0 0 6px;
   }
   nav form:before {
     position: absolute;
@@ -248,7 +249,8 @@ nav .search-icon {
     content: "";
     height: 40px;
     padding: 2px;
-    background: #fff;
+    background: transparent;
+    border: 2px solid #fff;
     border-radius: 6px;
     min-width: calc(100%);
     z-index: -2;
