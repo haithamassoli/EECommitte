@@ -31,7 +31,10 @@ console.log(subjects[0].name);
 searchData.addEventListener("keyup", (e) => {
   const lowerData = e.target.value.toLowerCase();
   subArr = subjects.filter((data) => {
-    return data.name.toLowerCase().includes(lowerData.toLowerCase());
+    return (
+      data.name.toLowerCase().includes(lowerData.toLowerCase()) ||
+      data.name2.toLowerCase().includes(lowerData.toLowerCase())
+    );
   });
   subArr = subArr.map((e) => {
     return `<li>${e.name}</li>`;
