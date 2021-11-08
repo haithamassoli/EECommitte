@@ -59,6 +59,9 @@ nav .nav-items li a:hover {
 nav .nav-items li a:first-child {
   margin-right: 30px;
 }
+::placeholder {
+  color: #fff;
+}
 nav form {
   display: flex;
   flex-direction: column;
