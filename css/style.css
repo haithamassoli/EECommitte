@@ -7,9 +7,13 @@
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 body {
   background: #f2f2f2;
+  background-image: url("../img/uni.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 nav {
   background: #171c24;
@@ -28,6 +32,7 @@ nav .logo {
 }
 nav .nav-items {
   display: flex;
+  flex-direction: row-reverse;
   flex: 1;
   padding: 0 0 0 40px;
 }
@@ -90,9 +95,12 @@ nav form .results-box.active {
 nav form .results-box div {
   width: 100%;
   max-height: 240px;
-  overflow-y: hidden;
+  overflow-y: scroll;
   opacity: 0;
   pointer-events: none;
+  display: none;
+}
+nav form .results-box div::-webkit-scrollbar {
   display: none;
 }
 nav form .results-box div.active {
@@ -110,8 +118,12 @@ nav form .results-box li {
 }
 nav form .results-box li:hover {
   background-color: #efefef;
+  cursor: pointer;
   color: #333;
 }
+/* nav form .results-box li:hover a {
+  color: #333;
+} */
 nav form button {
   padding: 0 15px;
   color: #fff;
@@ -164,7 +176,8 @@ nav .search-icon {
     padding: 10px 50px 0 50px;
     text-align: center;
     background: #14181f;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     transition: left 0.3s ease;
   }
   nav .nav-items.active {

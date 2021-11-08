@@ -6,7 +6,9 @@ const form = document.querySelector("form");
 let searchData = document.querySelector(".search-data");
 let resultsBox = document.querySelector(".results-box");
 let resultsDiv = document.querySelector(".results-box div");
+// let resultsLi = document.querySelectorAll(".results-box div li");
 // let searchData = document.querySelector(".search-data");
+
 let subArr = [];
 menuBtn.onclick = () => {
   items.classList.add("active");
@@ -37,11 +39,13 @@ searchData.addEventListener("keyup", (e) => {
     );
   });
   subArr = subArr.map((e) => {
-    return `<li>${e.name}</li>`;
+    return `<a href="${e.subjectLink}" target="_blank"><li>${e.name}</li></a>`;
   });
   resultsBox.classList.add("active");
   resultsDiv.classList.add("active");
   showSub(subArr);
+
+  // console.log(resultsLi);
 });
 
 function showSub(list) {
@@ -51,6 +55,15 @@ function showSub(list) {
     list = lowerData;
   } else {
     listData = list.join("");
+    console.log(listData);
+    // listData.addEventListener("click", (e) => {
+    //   console.log(e);
+    // });
   }
   resultsDiv.innerHTML = listData;
 }
+
+window.addEventListener("click", (e) => {
+  resultsBox.classList.remove("active");
+  resultsDiv.classList.remove("active");
+});
