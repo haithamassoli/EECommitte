@@ -25,6 +25,7 @@ cancelBtn.onclick = () => {
   cancelBtn.style.color = "#ff3d00";
 };
 searchBtn.onclick = () => {
+  searchBtn.style.color = "#333";
   form.classList.add("active");
   searchBtn.classList.add("hide");
   cancelBtn.classList.add("show");

@@ -86,7 +86,7 @@ nav form .search-data {
   text-align: right;
 }
 nav form .search-data:focus {
-  outline: red 1.5px solid;
+  outline: none;
 }
 nav form .results-box {
   z-index: 10;
@@ -143,7 +143,7 @@ nav form button {
   cursor: pointer;
 }
 nav form button:hover {
-  background: #e63600;
+  background: #333;
 }
 nav .menu-icon,
 nav .cancel-icon,
@@ -208,6 +208,9 @@ nav .search-icon {
   nav .nav-items li a:first-child {
     margin-right: 0px;
   }
+  nav form .search-data {
+    color: #333;
+  }
   nav form {
     position: absolute;
     top: 80px;
@@ -261,6 +264,9 @@ nav .search-icon {
   .fas {
     color: #fff;
   }
+  /* .fa-search {
+    color: #333;
+  } */
   nav .menu-icon span.hide,
   nav .search-icon.hide {
     display: none;
