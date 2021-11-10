@@ -6,7 +6,6 @@ const form = document.querySelector("form");
 let searchData = document.querySelector(".search-data");
 let resultsBox = document.querySelector(".results-box");
 let resultsDiv = document.querySelector(".results-box div");
-// let searchData = document.querySelector(".search-data");
 
 let subArr = [];
 menuBtn.onclick = () => {
@@ -39,13 +38,23 @@ searchData.addEventListener("keyup", (e) => {
     );
   });
   subArr = subArr.map((e) => {
-    return `<a href="subjects.html" target="_blank"><li>${e.name} / ${e.name2}</li></a>`;
+    return `<a href="subjects.html" target="_blank"><li>${e.name2}</li></a>`;
   });
   resultsBox.classList.add("active");
   resultsDiv.classList.add("active");
   showSub(subArr);
-
-  // console.log(resultsLi);
+  let subList = document.querySelectorAll(".results-box div a");
+  console.log(subList);
+  subList.forEach((e) => {
+    e.addEventListener("click", (e) => {
+      console.log(e.target.innerHTML);
+      for (i = 0; i < subjects.length; i++) {
+        if (e.target.innerHTML == subjects[i].name2) {
+          localStorage.setItem("subNum", subjects[i].num);
+        }
+      }
+    });
+  });
 });
 
 function showSub(list) {
@@ -55,10 +64,6 @@ function showSub(list) {
     list = lowerData;
   } else {
     listData = list.join("");
-    console.log(listData);
-    // listData.addEventListener("click", (e) => {
-    //   console.log(e);
-    // });
   }
   resultsDiv.innerHTML = listData;
 }

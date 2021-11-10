@@ -91,3 +91,16 @@ const resizeImg = new ImageResize({
   height: 2012,
   element: "#subjects__map",
 });
+
+let area = document.querySelectorAll("area");
+console.log(area);
+area.forEach((e) => {
+  e.addEventListener("click", (e) => {
+    console.log(e.path[0].alt);
+    for (i = 0; i < subjects.length; i++) {
+      if (e.path[0].alt == subjects[i].name2) {
+        localStorage.setItem("subNum", subjects[i].num);
+      }
+    }
+  });
+});
