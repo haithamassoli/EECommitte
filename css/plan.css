@@ -12,17 +12,8 @@ body {
 }
 .holder {
   width: 100%;
-  /* margin: 0 auto; */
-  /* height: 2012px; */
 }
 .holder > img {
   width: 100%;
   height: 100%;
 }
-/* @media (max-width: 480px) {
-  .holder > img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-  }
-} */
