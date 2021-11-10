@@ -1,11 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .holder {
   width: 100%;
   /* margin: 0 auto; */
   /* height: 2012px; */
 }
 .holder > img {
-  width: 1906px;
-  height: 2012px;
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 480px) {
   .holder > img {
