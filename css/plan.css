@@ -19,10 +19,10 @@ body {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .holder > img {
     width: 100%;
     height: 100%;
     object-fit: fill;
   }
-}
+} */
