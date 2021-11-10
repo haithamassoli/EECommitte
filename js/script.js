@@ -38,7 +38,7 @@ searchData.addEventListener("keyup", (e) => {
     );
   });
   subArr = subArr.map((e) => {
-    return `<a href="subjects.html" target="_blank"><li>${e.name2}</li></a>`;
+    return `<a href="${e.subjectLink}" target="_blank"><li>${e.name2}</li></a>`;
   });
   resultsBox.classList.add("active");
   resultsDiv.classList.add("active");
