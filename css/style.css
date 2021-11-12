@@ -39,7 +39,6 @@ nav .logo {
 }
 nav .nav-items {
   display: flex;
-  flex-direction: row-reverse;
   flex: 1;
   padding: 0 0 0 40px;
 }
@@ -86,7 +85,6 @@ nav form .search-data {
   border: none;
   font-weight: 500;
   background: none;
-  text-align: right;
 }
 nav form .search-data:focus {
   outline: none;
@@ -125,7 +123,6 @@ nav form .results-box li {
   width: 100%;
   cursor: default;
   border-radius: 3px;
-  text-align: right;
 }
 nav form .results-box li:hover {
   background-color: #efefef;

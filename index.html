@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -17,6 +24,35 @@
   </head>
   <body>
     <nav>
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+      </div>
+      <div class="logo"></div>
+      <img src="./img/lajna.jpg" class="logo-img" alt="logo" />
+      <div class="nav-items">
+        <li>
+          <a href="#">الصفحة الرئيسية</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-chevron-down"></i>الأكاديمي</a>
+          <div><a href="./plan.html">الخطة الشجرية</a></div>
+          <div><a href="#">الكادر التدريسي</a></div>
+          <div><a href="#">الدورات</a></div>
+        </li>
+        <li>
+          <a href="#">الجامعة</a>
+          <div class="dropmune">
+            <a href="#">عن الجامعة</a>
+            <a href="#">خدمات الطالب</a>
+            <a href="#">تسجيل المواد</a>
+            <a href="#">E-learning</a>
+            <a href="#">التقويم الجامعي</a>
+            <a href="#">مكتبة الجامعة</a>
+          </div>
+        </li>
+        <li><a href="#">عن اللجنة</a></li>
+        <li><a href="#">تواصل معنا</a></li>
+      </div>
       <div class="search-icon">
         <span class="fas fa-search"></span>
       </div>
@@ -30,6 +66,7 @@
             type="search"
             class="search-data"
             placeholder="ابحث"
+            dir="auto"
             required
           />
         </div>
@@ -37,19 +74,6 @@
           <div></div>
         </div>
       </form>
-      <div class="nav-items">
-        <li><a href="#">الصفحة الرئيسية</a></li>
-        <li><a href="./plan.html">الخطة</a></li>
-        <li><a href="#">الأكاديمي</a></li>
-        <li><a href="#">الجامعة</a></li>
-        <li><a href="#">عن اللجنة</a></li>
-        <li><a href="#">تواصل معنا</a></li>
-      </div>
-      <div class="logo"></div>
-      <img src="./img/lajna.jpg" class="logo-img" alt="logo" />
-      <div class="menu-icon">
-        <span class="fas fa-bars"></span>
-      </div>
     </nav>
     <div class="content">
       <header class="space"><h1>EECommitte</h1></header>

@@ -104,3 +104,79 @@ area.forEach((e) => {
     }
   });
 });
+let holderSqr = document.querySelector(".holder-sqr");
+let holderImg = document.querySelector(".holder");
+let sqr5 = document.querySelector(".sqr-5Div");
+let sqr4 = document.querySelector(".sqr-4Div");
+let sqr3 = document.querySelector(".sqr-3Div");
+let sqr2 = document.querySelector(".sqr-2Div");
+let sqr1 = document.querySelector(".sqr-1Div");
+let sqr0 = document.querySelector(".sqr-0Div");
+
+let firstBtn = document.querySelector(".firstBtn");
+let secondBtn = document.querySelector(".secondBtn");
+let thirdBtn = document.querySelector(".thirdBtn");
+let fourthBtn = document.querySelector(".fourthBtn");
+let fifthBtn = document.querySelector(".fifthBtn");
+let sixthBtn = document.querySelector(".sixthBtn");
+
+firstBtn.addEventListener("click", () => {
+  holderSqr.style.display = "block";
+  holderImg.style.display = "none";
+  sqr0.style.display = "block";
+  sqr1.style.display = "none";
+  sqr2.style.display = "none";
+  sqr3.style.display = "none";
+  sqr4.style.display = "none";
+  sqr5.style.display = "none";
+});
+secondBtn.addEventListener("click", () => {
+  holderSqr.style.display = "block";
+  holderImg.style.display = "none";
+  sqr1.style.display = "block";
+  sqr0.style.display = "none";
+  sqr2.style.display = "none";
+  sqr3.style.display = "none";
+  sqr4.style.display = "none";
+  sqr5.style.display = "none";
+});
+thirdBtn.addEventListener("click", () => {
+  holderSqr.style.display = "block";
+  holderImg.style.display = "none";
+  sqr2.style.display = "block";
+  sqr1.style.display = "none";
+  sqr0.style.display = "none";
+  sqr3.style.display = "none";
+  sqr4.style.display = "none";
+  sqr5.style.display = "none";
+});
+fourthBtn.addEventListener("click", () => {
+  holderSqr.style.display = "block";
+  holderImg.style.display = "none";
+  sqr3.style.display = "block";
+  sqr1.style.display = "none";
+  sqr2.style.display = "none";
+  sqr0.style.display = "none";
+  sqr4.style.display = "none";
+  sqr5.style.display = "none";
+});
+fifthBtn.addEventListener("click", () => {
+  holderSqr.style.display = "block";
+  holderImg.style.display = "none";
+  sqr4.style.display = "block";
+  sqr1.style.display = "none";
+  sqr2.style.display = "none";
+  sqr3.style.display = "none";
+  sqr0.style.display = "none";
+  sqr5.style.display = "none";
+});
+sixthBtn.addEventListener("click", () => {
+  holderSqr.style.display = "block";
+  holderImg.style.display = "none";
+  sqr5.style.display = "block";
+  sqr1.style.display = "none";
+  sqr2.style.display = "none";
+  sqr3.style.display = "none";
+  sqr4.style.display = "none";
+  sqr0.style.display = "none";
+});
