@@ -72,3 +72,23 @@ window.addEventListener("click", (e) => {
   resultsBox.classList.remove("active");
   resultsDiv.classList.remove("active");
 });
+
+let dropdownBtnAcd = document.querySelector(".dropdown-btn.acd");
+let dropdownBtnUni = document.querySelector(".dropdown-btn.uni");
+let wrapperContentAcd = document.querySelector(".wrapper__content.acd");
+let wrapperContentUni = document.querySelector(".wrapper__content.uni");
+let faChevronDownAcd = document.querySelector(".fa-chevron-down.acd");
+let faChevronDownUni = document.querySelector(".fa-chevron-down.uni");
+
+dropdownBtnAcd.addEventListener("click", () => {
+  wrapperContentAcd.classList.toggle("active");
+  faChevronDownAcd.classList.toggle("active");
+  wrapperContentUni.classList.remove("active");
+  faChevronDownUni.classList.remove("active");
+});
+dropdownBtnUni.addEventListener("click", () => {
+  wrapperContentUni.classList.toggle("active");
+  faChevronDownUni.classList.toggle("active");
+  wrapperContentAcd.classList.remove("active");
+  faChevronDownAcd.classList.remove("active");
+});
